@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <label for="name" id="name-label"> Name</label>
+            <input id="name" type="text" required placeholder="Enter your name" />
+
+            <label for="email" id="email-label">Email </label>
+            <input id="email" type="email" required placeholder="Enter your email" />
+
+
+            <label for="number" id="number-label">Age (optional) </label>
+            <input id="number" type="number" min="10" max="120" placeholder="Age" />
+
+            <label>Which option best describes your current role?</label>
+            <select id="dropdown">
+                <option selected disabled>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            
+            <input name="recommendation" id="definitely" value="definitely" type="radio" value="definitely" checked/>
+            <label for="definitely">Definitely</label>
+            
+            <input name="recommendation" id="maybe" value="maybe" type="radio" value="maybe"/>
+            <label for="definitely">Maybe</label>
+            
+            <input name="recommendation" id="nots-sure" value="not-sure" type="radio" value="not-sure"/>
+            <label for="not-sure">Not sure</label>
+            
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input id="Front-end Projects" value="Front-end Projects" type="checkbox"/>
+            <label>Front-end Projects</label>
+            <input id="Back-end Projects" value="Back-end Projects" type="checkbox"/>
+            <label>Back-end Projects</label>
+            <input id="Data Visualization" value="Data Visualization" type="checkbox"/>
+            <label>Data Visualization</label>
+            <input id="Challenges" value="Challenges" type="checkbox"/>
+            <label>Challenges</label>
+            <input id="Open Source Community" value="Open Source Community" type="checkbox"/>
+            <label>Open Source Community</label>
+            
+            <label>Any comments or suggestions?</label>
+            <textarea id="text-area"></textarea>
+
+            <input type="submit" id="submit"/>
+        </form>
+
+    </main>
+</body>
+
+
+
+</html>
